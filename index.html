@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Logout - eLearning CUTM</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Popup style */
+        .logout-message-popup {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px;
+            background-color: #4CAF50; /* Green for success */
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            display: block;
+            opacity: 1;
+            animation: fadeOut 2s forwards; /* Fade out effect */
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-30px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logout-container">
+        <div class="logout-message">
+            <h2>Logout</h2>
+            <p id="logout-text" style="display: none;">Ai fost deconectat cu succes! Vrei să te reconectezi?</p>
+            <a href="file:///C:/Users/user/Desktop/Login/index.html">
+                <button id="logout-btn" class="logout-btn">Logout</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('logout-btn').addEventListener('click', function(e) {
+            // Prevent immediate redirection
+            e.preventDefault();
+
+            // Display success message
+            var logoutText = document.getElementById('logout-text');
+            logoutText.style.display = 'block';
+
+            // After 2 seconds, hide the message and redirect to the login page
+            setTimeout(function() {
+                window.location.href = 'file:///C:/Users/user/Desktop/Login/index.html'; // Redirect to the login page
+            }, 2000); // 2 seconds delay before redirect
+        });
+    </script>
+
+</body>
+</html>

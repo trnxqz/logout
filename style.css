@@ -1,0 +1,64 @@
+/* General styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Logout Container */
+.logout-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Logout Message */
+.logout-message h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.logout-message p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    padding: 12px 20px;
+    background-color: #fd7424;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e55d18;
+}
+
+.logout-btn:active {
+    transform: scale(0.98);
+}
+
+/* Styling for links */
+a {
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .logout-container {
+        width: 80%;
+    }
+}
