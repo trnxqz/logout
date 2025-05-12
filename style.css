@@ -1,4 +1,4 @@
-/* General styling */
+
 body {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-/* Logout Container */
+
 .logout-container {
     width: 100%;
     max-width: 500px;
@@ -20,7 +20,7 @@ body {
     text-align: center;
 }
 
-/* Logout Message */
+
 .logout-message h2 {
     font-size: 24px;
     color: #333;
@@ -51,12 +51,12 @@ body {
     transform: scale(0.98);
 }
 
-/* Styling for links */
+
 a {
     text-decoration: none;
 }
 
-/* Responsive design */
+
 @media (max-width: 600px) {
     .logout-container {
         width: 80%;

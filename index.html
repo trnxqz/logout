@@ -6,14 +6,14 @@
     <title>Logout - eLearning CUTM</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        /* Popup style */
+
         .logout-message-popup {
             position: fixed;
             top: 20%;
             left: 50%;
             transform: translateX(-50%);
             padding: 20px;
-            background-color: #4CAF50; /* Green for success */
+            background-color: #4CAF50; 
             color: white;
             font-size: 18px;
             border-radius: 5px;
@@ -22,7 +22,7 @@
             z-index: 999;
             display: block;
             opacity: 1;
-            animation: fadeOut 2s forwards; /* Fade out effect */
+            animation: fadeOut 2s forwards; 
         }
 
         @keyframes fadeOut {
@@ -50,17 +50,17 @@
 
     <script>
         document.getElementById('logout-btn').addEventListener('click', function(e) {
-            // Prevent immediate redirection
+      
             e.preventDefault();
 
-            // Display success message
+            
             var logoutText = document.getElementById('logout-text');
             logoutText.style.display = 'block';
 
-            // After 2 seconds, hide the message and redirect to the login page
+         
             setTimeout(function() {
-                window.location.href = 'file:///C:/Users/user/Desktop/Login/index.html'; // Redirect to the login page
-            }, 2000); // 2 seconds delay before redirect
+                window.location.href = 'file:///C:/Users/user/Desktop/Login/index.html'; 
+            }, 2000);
         });
     </script>
 
